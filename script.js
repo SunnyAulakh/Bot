@@ -1,7 +1,7 @@
 var audio = new Audio('assets/sentmessage.mp3');
 var contactString = "<div class='social'> <a target='_blank' href='tel:+918288829007'> <div class='socialItem' id='call'><img class='socialItemI' src='images/phone.svg'/><label class='number'>8288829007</label></div> </a> <a href='mailto:sunnyaulakh8916@gmail.com'> <div class='socialItem'><img class='socialItemI' src='images/gmail.svg' alt=''></div> </a> <a target='_blank' href='https://github.com/GlobencyMedia'> <div class='socialItem'><img class='socialItemI' src='images/github.svg' alt=''></div> </a> <a target='_blank' href='https://wa.me/918288829007'> <div class='socialItem'><img class='socialItemI' src='images/whatsapp.svg' alt=''></div> </a> <a target='_blank' href='https://instagram.com/officialglobencymedia'> <div class='socialItem'><img class='socialItemI' src='images/instagram.svg' alt=''> </div> </a> <a href='https://linkedin.com/company/globencymedia/' target='_blank' rel='noopener noreferrer'> <div class='socialItem'><img class='socialItemI' src='images/linkedin.svg' alt=''></div> </a> </div>";
 var brochureString = "<img src='images/BrochureThumbnail.png' class='resumeThumbnail'><div class='downloadSpace'><div class='pdfname'><img src='images/pdf.png'><label>Globency Media Brochure.pdf</label></div><a href='assets/Globency Media - Brochure.pdf' download='Globency Media Brochure.pdf'><img class='download' src='images/downloadIcon.svg'></a></div>";
-var addressString = "<div class='mapview'><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238.63833262443757!2d74.19014864534314!3d16.865338763272877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1a7dcf40f5dd7%3A0xd7b69fe1fcfa9877!2zMTbCsDUxJzU1LjQiTiA3NMKwMTEnMjUuMyJF!5e0!3m2!1sen!2sin!4v1645079906766!5m2!1sen!2sin' class='map'></iframe></div><label class='add'><address>370 Ground Floor, Shaheed Udham Singh Nagar, Near Dhingra Laboratory,<br>Jalandhar<br>Jalandhar City, Punjab, India 144001</address>";
+var addressString = "<div class='mapview'><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238.63833262443757!2d74.19014864534314!3d16.865338763272877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1a7dcf40f5dd7%3A0xd7b69fe1fcfa9877!2zMTbCsDUxJzU1LjQiTiA3NMKwMTEnMjUuMyJF!5e0!3m2!1sen!2sin!4v1645079906766!5m2!1sen!2sin' class='map'></iframe></div><label class='add'><address>370 Ground Floor, Shaheed Udham Singh Nagar, Near Dhingra Laboratory<br>Jalandhar<br>Jalandhar City, Punjab, India 144001</address>";
 function startFunction() {
     setLastSeen();
     waitAndResponce("intro");
@@ -72,11 +72,15 @@ function waitAndResponce(inputText) {
     switch (inputText.toLowerCase().trim()) {
         case "intro":
             setTimeout(() => {
-                sendTextMessage("Hello there 👋🏻,<br><br>My name is <span class='bold'><a class='alink'>Globency Media AI</a>.</span><br><br>I am an AI Bot from <span class='bold'>Globency Media</span><br><br>I am eager to hear about your potential career opportunities, so I would be pleased to chat about Projects in IT sphere.<br><br>Send <span class='bold'>'help'</span> to know more about Projects.<br>");
+                sendTextMessage("Hello there 👋🏻,<br><br>I am <span class='bold'><a class='alink'>Globency Media AI</a>.</span><br><br>I am an AI Bot from <span class='bold'>Globency Media</span><br><br>I am eager to hear about your potential career opportunities, so I would be pleased to chat about Projects in IT sphere.<br><br>Send <span class='bold'>'help'</span> to know more about Projects.<br>");
             }, 2000);
             break;
 
         case "brochure":
+            sendTextMessage(brochureString);
+            break;
+
+            case "what products do you offer?":
             sendTextMessage(brochureString);
             break;
 
@@ -102,6 +106,14 @@ function waitAndResponce(inputText) {
 
         case "assist me":
             sendTextMessage("<span class='sk'>Send Keyword to get what you want to know about projects...<br>e.g<br><br><span class='bold'>'Brochure'</span><br> - to download our brochure<br><br><span class='bold'>'About'</span> - to know about Globency Media<br><br><span class='bold'>'Social Media Management'</span><br> - to know this service<br><br><span class='bold'>'Video Production'</span><br> - to know what type of videos we produce<br><br><span class='bold'>'Website'</span><br> - to know which website can help you<br><br><span class='bold'>'App'</span><br> - to know which app suits best for your organisation<br><br><span class='bold'>'CRM'<br></span> - to know Customer Relationship Management <br><br><span class='bold'>'ERP'<br></span> - to know Enterprise Resource Planning <br><br><span class='bold'>'Ongoing Projects'<br></span> - to know about Globency Media's ongoing projects<br><br><span class='bold'>'Location'</span><br> - to know our location<br><br><span class='bold'>'Clear'</span><br> - to clear conversation</span>");
+            break;
+
+        case "what services do you offer?":
+            sendTextMessage("<span class='sk'>Send Keyword to get what you want to know about services...<br>e.g<br><br><span class='bold'>'Brochure'</span><br> - to download our brochure<br><br><span class='bold'>'About'</span> - to know about Globency Media<br><br><span class='bold'>'Social Media Management'</span><br> - to know this service<br><br><span class='bold'>'Video Production'</span><br> - to know what type of videos we produce<br><br><span class='bold'>'Website'</span><br> - to know which website can help you<br><br><span class='bold'>'App'</span><br> - to know which app suits best for your organisation<br><br><span class='bold'>'CRM'<br></span> - to know Customer Relationship Management <br><br><span class='bold'>'ERP'<br></span> - to know Enterprise Resource Planning <br><br><span class='bold'>'Ongoing Projects'<br></span> - to know about Globency Media's ongoing projects<br><br><span class='bold'>'Location'</span><br> - to know our location<br><br><span class='bold'>'Clear'</span><br> - to clear conversation</span>");
+            break;
+
+        case "what are your services?":
+            sendTextMessage("<span class='sk'>Send Keyword to get what you want to know about services..<br>e.g<br><br><span class='bold'>'Brochure'</span><br> - to download our brochure<br><br><span class='bold'>'About'</span> - to know about Globency Media<br><br><span class='bold'>'Social Media Management'</span><br> - to know this service<br><br><span class='bold'>'Video Production'</span><br> - to know what type of videos we produce<br><br><span class='bold'>'Website'</span><br> - to know which website can help you<br><br><span class='bold'>'App'</span><br> - to know which app suits best for your organisation<br><br><span class='bold'>'CRM'<br></span> - to know Customer Relationship Management <br><br><span class='bold'>'ERP'<br></span> - to know Enterprise Resource Planning <br><br><span class='bold'>'Ongoing Projects'<br></span> - to know about Globency Media's ongoing projects<br><br><span class='bold'>'Location'</span><br> - to know our location<br><br><span class='bold'>'Clear'</span><br> - to clear conversation</span>");
             break;
 
         case "assist me":
@@ -266,7 +278,7 @@ function waitAndResponce(inputText) {
             break;
 
         case "what are you doing?":
-            sendTextMessage("Talking to you");
+            sendTextMessage("Talking to you.");
             break;
 
             case "what are you doing":
@@ -278,19 +290,19 @@ function waitAndResponce(inputText) {
             break;
 
         case "why did they made you?":
-            sendTextMessage("To talk to you");
+            sendTextMessage("To talk to you.");
             break;
 
         case "why are you here?":
-            sendTextMessage("To talk to you");
+            sendTextMessage("To talk to you.");
             break;
 
         case "i love you":
-            sendTextMessage("Thanks for showing us your love! Lots of love from Team Globency Media");
+            sendTextMessage("Thanks for showing us your love! Lots of love from Team Globency Media.");
             break;   
             
         case "i love u":
-            sendTextMessage("Thanks for showing us your love! Lots of love from Team Globency Media");
+            sendTextMessage("Thanks for showing us your love! Lots of love from Team Globency Media.");
             break;
         
 
@@ -304,6 +316,18 @@ function waitAndResponce(inputText) {
 
         case "who is sunny aulakh?":
             sendTextMessage("Sunny Aulakh, the visionary founder of Globency Media, is doing something amazing in the digital marketing world. Choosing a small town over big cities was a smart move that makes Globency Media different. In a world where metropolises often steal the spotlight, Aulakh’s decision to establish a digital marketing powerhouse in this small-town city has proven to be a strategic move that sets Globency Media apart.");
+            break;
+
+        case "who is sunny?":
+            sendTextMessage("Sunny Aulakh, the visionary founder of Globency Media, is doing something amazing in the digital marketing world. Choosing a small town over big cities was a smart move that makes Globency Media different. In a world where metropolises often steal the spotlight, Aulakh’s decision to establish a digital marketing powerhouse in this small-town city has proven to be a strategic move that sets Globency Media apart.");
+            break;
+
+        case "sunny is this you?":
+            sendTextMessage("No, this is Globency Media's AI Bot from Sunny Aulakh.");
+            break;
+
+        case "sunny aulakh are you there?":
+            sendTextMessage("Sunny Aulakh is not here actually. He could be working on some projects like me.");
             break;
 
         case "where is sunny aulakh?":
