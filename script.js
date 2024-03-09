@@ -1,7 +1,7 @@
 var audio = new Audio('assets/sentmessage.mp3');
 var contactString = "<div class='social'> <a target='_blank' href='tel:+918288829007'> <div class='socialItem' id='call'><img class='socialItemI' src='images/phone.svg'/><label class='number'>8288829007</label></div> </a> <a href='mailto:sunnyaulakh8916@gmail.com'> <div class='socialItem'><img class='socialItemI' src='images/gmail.svg' alt=''></div> </a> <a target='_blank' href='https://github.com/GlobencyMedia'> <div class='socialItem'><img class='socialItemI' src='images/github.svg' alt=''></div> </a> <a target='_blank' href='https://wa.me/918288829007'> <div class='socialItem'><img class='socialItemI' src='images/whatsapp.svg' alt=''></div> </a> <a target='_blank' href='https://instagram.com/officialglobencymedia'> <div class='socialItem'><img class='socialItemI' src='images/instagram.svg' alt=''> </div> </a> <a href='https://linkedin.com/company/globencymedia/' target='_blank' rel='noopener noreferrer'> <div class='socialItem'><img class='socialItemI' src='images/linkedin.svg' alt=''></div> </a> </div>";
 var brochureString = "<img src='images/BrochureThumbnail.png' class='resumeThumbnail'><div class='downloadSpace'><div class='pdfname'><img src='images/pdf.png'><label>Globency Media Brochure.pdf</label></div><a href='assets/Globency Media - Brochure.pdf' download='Globency Media Brochure.pdf'><img class='download' src='images/downloadIcon.svg'></a></div>";
-var addressString = "<div class='mapview'><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238.63833262443757!2d74.19014864534314!3d16.865338763272877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1a7dcf40f5dd7%3A0xd7b69fe1fcfa9877!2zMTbCsDUxJzU1LjQiTiA3NMKwMTEnMjUuMyJF!5e0!3m2!1sen!2sin!4v1645079906766!5m2!1sen!2sin' class='map'></iframe></div><label class='add'><address>Nakodar<br>Jalandhar<br>Jalandhar City, Punjab, INDIA 144001</address>";
+var addressString = "<div class='mapview'><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238.63833262443757!2d74.19014864534314!3d16.865338763272877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1a7dcf40f5dd7%3A0xd7b69fe1fcfa9877!2zMTbCsDUxJzU1LjQiTiA3NMKwMTEnMjUuMyJF!5e0!3m2!1sen!2sin!4v1645079906766!5m2!1sen!2sin' class='map'></iframe></div><label class='add'><address>370 Ground Floor, Shaheed Udham Singh Nagar, Near Dhingra Laboratory,<br>Jalandhar<br>Jalandhar City, Punjab, India 144001</address>";
 function startFunction() {
     setLastSeen();
     waitAndResponce("intro");
@@ -133,19 +133,19 @@ function waitAndResponce(inputText) {
             break;
 
         case "app":
-            sendTextMessage("<span class='sk'>In Application Development, the type of Mobile Applications we develop:<br><span class='bold'>~ Informative Websites<br>~ Ecommerce Websites<br>~ Shopify Websites<br>~ Client Portals<br></span>");
+            sendTextMessage("<span class='sk'>In Application Development, the type of Mobile Applications we develop:<br><span class='bold'>~ Native IOS in Flutter<br>~ Native Android in Flutter<br>~ Web version<br></span>");
             break;
 
             case "application":
-            sendTextMessage("<span class='sk'>In Application Development, the type of Mobile Applications we develop:<br><span class='bold'>~ Informative Websites<br>~ Ecommerce Websites<br>~ Shopify Websites<br>~ Client Portals<br></span>");
+            sendTextMessage("<span class='sk'>In Application Development, the type of Mobile Applications we develop:<br><span class='bold'>~ Native IOS in Flutter<br>~ Native Android in Flutter<br>~ Web version<br></span>");
             break;
 
             case "mobile app":
-            sendTextMessage("<span class='sk'>In Application Development, the type of Mobile Applications we develop:<br><span class='bold'>~ Informative Websites<br>~ Ecommerce Websites<br>~ Shopify Websites<br>~ Client Portals<br></span>");
+            sendTextMessage("<span class='sk'>In Application Development, the type of Mobile Applications we develop:<br><span class='bold'>~ Native IOS in Flutter<br>~ Native Android in Flutter<br>~ Web version<br></span>");
             break;
 
             case "mobile application":
-            sendTextMessage("<span class='sk'>In Application Development, the type of Mobile Applications we develop:<br><span class='bold'>~ Informative Websites<br>~ Ecommerce Websites<br>~ Shopify Websites<br>~ Client Portals<br></span>");
+            sendTextMessage("<span class='sk'>In Application Development, the type of Mobile Applications we develop:<br><span class='bold'>~ Native IOS in Flutter<br>~ Native Android in Flutter<br>~ Web version<br></span>");
             break;
 
         case "video production":
