@@ -2,7 +2,7 @@
 ## _Chatting Bot Like Design (Whatsapp like interface)_
 
 
-- [Running Site](https://Chat/)
+- [Running Site](https://sunnyaulakh.github.io/Bot/)
 
 
 ## Technologies Used
