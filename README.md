@@ -2,7 +2,7 @@
 ## _Chatting Bot Like Design (Whatsapp like interface)_
 
 
-- [Running Site](https://sunnyaulakh.github.io/Bot/)
+- [Running Site]([https://globency-media-chat-bot.vercel.app/)
 
 
 ## Technologies Used
